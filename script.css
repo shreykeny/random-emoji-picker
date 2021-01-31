@@ -26,3 +26,7 @@ body {
   box-sizing: border-box;
   border-radius: 184px;
 }
+
+#message {
+  font-family: "Courier New", Courier, monospace;
+}
