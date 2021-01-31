@@ -27,7 +27,7 @@
         </button>
      </div>
 
-
+<p id="message"> </p>
 
 
 </body>
@@ -1148,6 +1148,11 @@ para.innerHTML = "&#" + newEmojiId;
 
 let copyEmoji = () => {
 let copyText = emoji[newEm];
+
+
+document.getElementById('message').textContent = "Copied!";
+
+setTimeout(() => {document.getElementById('message').textContent = "";}, 1300);
 
 copyToClipboard(copyText);
 }
